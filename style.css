@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin: 10px;
+}
+.box{
+    background-color: steelblue;
+    height:200px;
+    width: 400px;
+    margin-bottom: 30px;
+    display: flex;
+    font-size:30px;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    margin:10px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show{
+    transform: translateX(0);
+}
